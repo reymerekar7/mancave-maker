@@ -8,7 +8,7 @@
 
 ## Key Features
 
-* calls `gpt-image-1` to restyle the uploaded photo in seconds.  
+* Calls `gpt-image-1` to restyle the uploaded photo in seconds.  
 * **FastAPI Backend** – keeps your OpenAI key on the server; React talks to it via `/api/transform`.  
 * **Vite + React Front‑End** – hot‑reload during development, Tailwind CSS for styling.  
 * run locally, in Docker, or on any serverless container.
@@ -28,7 +28,7 @@
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/<your‑user>/mancave-maker.git
+git clone https://github.com/reymerekar7/mancave-maker
 cd mancave-maker
 ```
 
@@ -75,12 +75,11 @@ Open the app in your browser, upload a room photo, and watch it become a man‑c
 
 ---
 
-## 📝 Environment Variables
+## Environment Variables
 
 | Variable         | Description                              |
 |------------------|------------------------------------------|
 | `OPENAI_API_KEY` | Required. Your secret key for GPT‑4o API |
 
-Add more variables (e.g., `PORT`, `ALLOWED_ORIGINS`) as your deployment needs grow.
 
 ---
