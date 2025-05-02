@@ -7,3 +7,7 @@ venv
 # notebooks
 *.ipynb
 
+# Python generated
+__pycache__
+.pyc
+
