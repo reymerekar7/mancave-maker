@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-gray-800 bg-navy-900;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display text-cream-100 leading-tight;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 font-bold rounded-md transition-all duration-200 inline-flex items-center justify-center;
+  }
+  
+  .btn-primary {
+    @apply btn bg-orange-500 text-white hover:bg-orange-600 active:bg-orange-700;
+  }
+  
+  .btn-secondary {
+    @apply btn border-2 border-cream-200 text-cream-100 hover:bg-cream-200/10;
+  }
+  
+  .nav-link {
+    @apply text-cream-200 hover:text-white transition-colors px-4 py-2;
+  }
+  
+  .active-nav-link {
+    @apply text-orange-500 hover:text-orange-500;
+  }
+  
+  .diagonal-box {
+    @apply relative overflow-hidden;
+  }
+  
+  .diagonal-box::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-full bg-gradient-to-tr from-navy-900 to-navy-700 z-0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  
+  .diagonal-box::after {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-full z-0;
+    background: repeating-linear-gradient(
+      45deg,
+      rgba(233, 95, 15, 0.08) 0px,
+      rgba(233, 95, 15, 0.08) 1px,
+      transparent 1px,
+      transparent 10px
+    );
+  }
+  
+  .card {
+    @apply bg-navy-800 rounded-lg shadow-lg overflow-hidden;
+  }
+  
+  .upload-zone {
+    @apply border-2 border-dashed border-cream-200/30 rounded-lg p-8 flex flex-col items-center justify-center cursor-pointer transition-all;
+  }
+  
+  .upload-zone:hover {
+    @apply border-orange-500/50 bg-navy-800/50;
+  }
+}
+
+.page-transition {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.diagonal-stripes {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 20px,
+    rgba(233, 95, 15, 0.1) 20px,
+    rgba(233, 95, 15, 0.1) 40px
+  );
+}
