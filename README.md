@@ -4,6 +4,8 @@
 
 **Mancave Maker** transforms a photo of any empty room into a fully‑furnished, photorealistic man‑cave using OpenAI’s GPT‑4o Image API (gpt-image-1).
 
+https://github.com/user-attachments/assets/dedefc46-6e22-4db0-ad4d-47f4b696b0fa
+
 ---
 
 ## Key Features
